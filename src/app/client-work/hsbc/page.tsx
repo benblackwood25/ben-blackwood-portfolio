@@ -180,7 +180,7 @@ export default function HsbcCaseStudyPage() {
             </p>
             <div className="mt-4 mb-8">
               <Image
-                src="/hsbc/artifacts/03-photoroom.png"
+                src="/hsbc/artifacts/03-workflow.png"
                 alt="Mapping out the users current workflow"
                 width={1054}
                 height={1280}
@@ -303,7 +303,7 @@ export default function HsbcCaseStudyPage() {
 
             <div className="mt-6 overflow-hidden rounded-2xl border border-foreground/10 bg-foreground/[0.02]">
               <Image
-                src="/hsbc/artifacts/05.png"
+                src="/hsbc/artifacts/05-results.png"
                 alt="Execution Details"
                 width={1800}
                 height={1100}
