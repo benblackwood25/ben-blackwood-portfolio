@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 
 type Props = {
   email: string;
@@ -15,16 +15,14 @@ export default function EmailChip({ email, buttonClassName, label }: Props) {
   const copyBtnRef = useRef<HTMLButtonElement | null>(null);
   const triggerRef = useRef<HTMLButtonElement | null>(null);
 
-  const titleId = useMemo(
-    () => `email-modal-title-${Math.random().toString(36).slice(2)}`,
-    [],
-  );
+  const titleId = useId();
 
   useEffect(() => {
     if (!open) return;
 
     const prevOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
+    const trigger = triggerRef.current;
 
     const onKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
@@ -58,7 +56,7 @@ export default function EmailChip({ email, buttonClassName, label }: Props) {
     return () => {
       window.removeEventListener("keydown", onKeyDown);
       document.body.style.overflow = prevOverflow;
-      triggerRef.current?.focus();
+      trigger?.focus();
     };
   }, [open]);
 

@@ -134,7 +134,7 @@ export default function CookifyCaseStudyPage() {
               by creating a user persona of a millennial who enjoys experimenting
               with food serves a critical purpose in the design process. By
               crafting this persona, collectively we gained validation and
-              valuable insights into the user (Sarah's) needs, preferences, and
+              valuable insights into the user (Sarah’s) needs, preferences, and
               pain points when it comes to using a food-related application.
               This deeper understanding allows us to design a more user-centric
               and effective app.
@@ -181,7 +181,7 @@ export default function CookifyCaseStudyPage() {
               By creating a user journey map, I could start narrowing the scope
               and defining the key areas of opportunity. This helped us visualize
               and understand the entire user experience from her perspective. By
-              mapping out Sarah's journey, we gain a comprehensive view of her
+              mapping out Sarah’s journey, we gain a comprehensive view of her
               interactions with our food-related application, from her initial
               point of entry to her ongoing engagement. This process allows us
               to identify pain points, moments of delight, and critical
@@ -319,7 +319,7 @@ export default function CookifyCaseStudyPage() {
             <p className="mt-4 text-sm leading-7 text-foreground/75 sm:text-base sm:leading-8">
               Since implementing the visual imagery on instructions and
               ingredients, we witnessed a notable increase in the understanding
-              and engagement of the specific recipes. Furthermore, I've received
+              and engagement of the specific recipes. Furthermore, I’ve received
               positive feedback from users regarding the streamlined browsing
               process for them searching recipes, resulting in substantial time
               savings.
@@ -345,7 +345,7 @@ export default function CookifyCaseStudyPage() {
               <li>
                 User testing remains an ongoing process even through
                 development. Design continually evolves to enhance the user
-                experience. It's crucial to consistently gather and heed user
+                experience. It’s crucial to consistently gather and heed user
                 feedback.
               </li>
               <li>

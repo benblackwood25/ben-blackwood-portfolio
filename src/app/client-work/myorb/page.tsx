@@ -102,7 +102,7 @@ export default function MyOrbCaseStudyPage() {
           <div className={`${SURFACE} p-6 sm:p-10`}>
             <h2 className="text-base font-medium text-foreground">Discovery.</h2>
             <p className="mt-4 text-sm leading-7 text-foreground/75 sm:text-base sm:leading-8">
-              Before launching a product, it's important to understand the
+              Before launching a product, it’s important to understand the
               clients requirements and expectations in order to provide a
               solution to the problems being currently faced. Facilitating an
               initial discovery workshops allows me and the team to deeply
@@ -141,10 +141,10 @@ export default function MyOrbCaseStudyPage() {
             </p>
 
             <p className="mt-6 text-sm leading-7 text-foreground/75 sm:text-base sm:leading-8">
-              "GPs and doctors are currently using paper-based processes for
+              “GPs and doctors are currently using paper-based processes for
               patient requests, which is inefficient and causing duplicate,
               untraceable and sometimes undelivered requests, meaning patients
-              are suffering the consequences."
+              are suffering the consequences.”
             </p>
 
             <Image
@@ -189,10 +189,10 @@ export default function MyOrbCaseStudyPage() {
             </p>
 
             <p className="mt-6 text-sm leading-7 text-foreground/75 sm:text-base sm:leading-8">
-              "GPs and doctors need an electronic requesting system, that allows
+              “GPs and doctors need an electronic requesting system, that allows
               them to create, track and manage all patient requests with the
               hospitals in order to improve patient outcomes with speed and
-              efficiency."
+              efficiency.”
             </p>
           </div>
 
@@ -219,7 +219,7 @@ export default function MyOrbCaseStudyPage() {
             <p className="mt-6 text-sm leading-7 text-foreground/75 sm:text-base sm:leading-8">
               With colour theory and accessibility in mind, I helped build out
               the design system to ensure consistency across all products, using
-              the 'Blue' call to action buttons to help guide the user. After
+              the ‘Blue’ call to action buttons to help guide the user. After
               user feedback, we designed a dashboard navigation, with a side
               menu and a main display to ensure GPs can work on a screen with
               maximum width. Giving the user full control through the process

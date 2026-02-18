@@ -98,7 +98,7 @@ export default function HsbcCaseStudyPage() {
           <div className={`${SURFACE} p-6 sm:p-10`}>
             <h2 className="text-base font-medium text-foreground">Client.</h2>
             <p className="mt-4 text-sm leading-7 text-foreground/75 sm:text-base sm:leading-8">
-              As the lead Product Designer for HSBC's Kinisi data ingestion tool
+              As the lead Product Designer for HSBC’s Kinisi data ingestion tool
               I aimed to simplify the complex and manual workflows users faced
               when managing large data streams. Traditional tools were powerful
               but clunky and unintuitive slowing teams down and frustrating
@@ -214,7 +214,11 @@ export default function HsbcCaseStudyPage() {
               Problem Statement:
             </p>
             <p className="mt-3 text-sm leading-7 text-foreground/75 sm:text-base sm:leading-8">
-              "Users are facing complex and time-consuming data ingestion processes, from creating data feeds to manually mapping fields between sources and destinations. These challenges are causing inefficiencies and errors, preventing teams from using data effectively and slowing down their workflows."
+              “Users are facing complex and time-consuming data ingestion processes,
+              from creating data feeds to manually mapping fields between sources and
+              destinations. These challenges are causing inefficiencies and errors,
+              preventing teams from using data effectively and slowing down their
+              workflows.”
             </p>
           </div>
 
@@ -224,7 +228,13 @@ export default function HsbcCaseStudyPage() {
               Solution Statement:
             </p>
             <p className="mt-3 text-sm leading-7 text-foreground/75 sm:text-base sm:leading-8">
-              "To address the challenges of complex and time-consuming data ingestion processes, my team and I are developing a streamlined solution that simplifies feed creation, automates field mapping, and improves monitoring and error handling. As the lead designer, my role is to define the user experience, simplify workflows, and ensure the solution is intuitive and efficient, ultimately empowering teams to work more effectively and reduce errors."
+              “To address the challenges of complex and time-consuming data ingestion
+              processes, my team and I are developing a streamlined solution that
+              simplifies feed creation, automates field mapping, and improves
+              monitoring and error handling. As the lead designer, my role is to
+              define the user experience, simplify workflows, and ensure the
+              solution is intuitive and efficient—ultimately empowering teams to
+              work more effectively and reduce errors.”
             </p>
 
             <p className="mt-6 text-sm leading-7 text-foreground/75 sm:text-base sm:leading-8">

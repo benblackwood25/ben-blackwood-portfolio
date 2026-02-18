@@ -94,18 +94,6 @@ export default function Home() {
       <main id="top" className="mx-auto w-full max-w-5xl px-4 py-6 sm:px-6 sm:py-10">
         <section className="grid gap-4 md:grid-cols-2">
           <div className={`${SURFACE} flex flex-col p-6 sm:p-10`}>
-            <div className="mx-auto mb-6 w-full max-w-[110px] overflow-hidden rounded-2xl border border-foreground/10 bg-foreground/[0.02] sm:max-w-[120px]">
-              <Image
-                src="/images/hero.png"
-                alt="Hero image"
-                width={520}
-                height={520}
-                className="h-auto w-full object-cover"
-                sizes="120px"
-                priority
-              />
-            </div>
-
             <h1 className="text-5xl font-medium leading-[1.05] tracking-tight sm:text-6xl">
               Ben Blackwood
             </h1>
@@ -124,19 +112,22 @@ export default function Home() {
           </div>
 
           <div className={`${SURFACE} flex flex-col p-6 sm:p-10`}>
-            <div className="space-y-5">
-              <p className="text-base leading-7 text-foreground/80 sm:text-lg sm:leading-8">
-                As a product designer, I uncover core problems and translate
-                them into clear, creative solutions. I reduce friction, simplify
-                complex systems, and craft digital experiences that feel
-                intuitive even when the technology isn’t.
-                <br />
-                {" "}
-                Successful design starts with clear communication, genuine
-                curiosity, and deep understanding of users, their goals,
-                constraints, and real world context, so ideas move from
-                discovery to delivery, with confidence.
-              </p>
+            <div className="space-y-6">
+              <div className="max-w-[60ch] space-y-3 text-base leading-7 text-foreground/80 sm:text-lg sm:leading-8">
+                <p>
+                  As a product designer, I uncover core problems and translate
+                  them into clear, creative solutions.
+                </p>
+                <p>
+                  I reduce friction, simplify complex systems, and craft digital
+                  experiences that feel intuitive, even when the technology isn’t.
+                </p>
+                <p>
+                  Successful design starts with clear communication, genuine
+                  curiosity, and a deep understanding of users and real-world
+                  context.
+                </p>
+              </div>
             </div>
 
             <div className="mt-auto pt-10">
@@ -196,9 +187,9 @@ export default function Home() {
               <div className="min-w-0">
                 <blockquote className="text-base leading-7 text-foreground/85 sm:text-lg sm:leading-8">
                   “Ben is extremely communicative and creative, meaning he has
-                  gone above and beyond to ensure that the kariESPORTS' mission
+                  gone above and beyond to ensure that the kariESPORTS’ mission
                   delivered on all the expectations I had set for the team,
-                  bringing the website's vision to life.”
+                  bringing the website’s vision to life.”
                 </blockquote>
                 <p className="mt-5 text-sm font-medium text-foreground/75">
                   Kariann Tan
@@ -228,7 +219,7 @@ export default function Home() {
                         alt={w.imageAlt}
                         width={1200}
                         height={800}
-                        className="aspect-[16/10] w-full object-cover"
+                        className="card-hover__img aspect-[16/10] w-full object-cover"
                         sizes="(min-width: 768px) 50vw, 100vw"
                       />
                     </div>
@@ -249,14 +240,17 @@ export default function Home() {
                   </>
                 );
 
-                const className = `${SURFACE_INNER} p-5 hover:border-foreground/20 hover:bg-foreground/[0.035] ${FOCUS_RING} sm:p-6`;
+                const className = `${SURFACE_INNER} card-hover p-5 hover:border-foreground/20 hover:bg-foreground/[0.035] ${FOCUS_RING} sm:p-6`;
 
                 return w.href ? (
                   <Link key={w.title} href={w.href} className={className}>
                     {Card}
                   </Link>
                 ) : (
-                  <div key={w.title} className={`${SURFACE_INNER} p-5 sm:p-6`}>
+                  <div
+                    key={w.title}
+                    className={`${SURFACE_INNER} card-hover p-5 sm:p-6`}
+                  >
                     {Card}
                   </div>
                 );

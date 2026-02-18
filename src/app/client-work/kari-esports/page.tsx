@@ -121,7 +121,7 @@ export default function KariEsportsCaseStudyPage() {
             <h2 className="text-base font-medium text-foreground">Discovery.</h2>
 
             <p className="mt-4 text-sm leading-7 text-foreground/75 sm:text-base sm:leading-8">
-              In order to gather a deeper understanding of the brand's vision
+              In order to gather a deeper understanding of the brand’s vision
               and the problems they are currently facing, I facilitated a
               discovery workshop with the client and my fellow designers. This
               was the first step in our research to further recognise the
