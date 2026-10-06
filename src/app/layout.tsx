@@ -14,7 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Ben Blackwood",
-  description: "Portfolio built with Next.js and Tailwind CSS.",
+  description:
+    "Senior Product Designer simplifying products, workflows and digital experiences across B2B SaaS, fintech, eCommerce and digital products.",
 };
 
 export default function RootLayout({

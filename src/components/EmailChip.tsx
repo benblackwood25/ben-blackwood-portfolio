@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useId, useRef, useState } from "react";
+import { SPACE, TYPE } from "./type";
 
 type Props = {
   email: string;
@@ -115,7 +116,7 @@ export default function EmailChip({ email, buttonClassName, label }: Props) {
               ref={closeBtnRef}
               type="button"
               onClick={() => setOpen(false)}
-              className="absolute right-4 top-4 inline-flex h-9 w-9 items-center justify-center rounded-full border border-foreground/10 bg-foreground/[0.02] text-foreground/70 hover:border-emerald-300/40 hover:text-emerald-300/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground/40 sm:right-5 sm:top-5"
+              className="absolute right-4 top-4 inline-flex h-9 w-9 items-center justify-center rounded-full border border-foreground/10 bg-foreground/[0.02] text-ink-secondary hover:border-emerald-300/40 hover:text-emerald-300/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground/40 sm:right-5 sm:top-5"
               aria-label="Close"
             >
               <svg
@@ -137,11 +138,11 @@ export default function EmailChip({ email, buttonClassName, label }: Props) {
               <div>
                 <h2
                   id={titleId}
-                  className="text-base font-medium text-foreground"
+                  className={TYPE.h1}
                 >
                   Email
                 </h2>
-                <p className="mt-2 text-sm text-foreground/75 sm:text-base">
+                <p className={`${SPACE.tight} ${TYPE.body}`}>
                   {email}
                 </p>
               </div>
@@ -152,7 +153,7 @@ export default function EmailChip({ email, buttonClassName, label }: Props) {
                 ref={copyBtnRef}
                 type="button"
                 onClick={handleCopy}
-                className="rounded-full border border-foreground/10 bg-foreground/[0.02] px-4 py-2 text-sm font-medium text-foreground/80 hover:border-emerald-300/40 hover:text-emerald-300/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground/40"
+                className="rounded-full border border-foreground/10 bg-foreground/[0.02] px-4 py-2 text-sm font-medium text-ink-secondary hover:border-emerald-300/40 hover:text-emerald-300/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground/40"
               >
                 {copied ? "Copied" : "Copy"}
               </button>
