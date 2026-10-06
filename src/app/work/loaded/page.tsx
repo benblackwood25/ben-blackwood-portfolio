@@ -69,9 +69,6 @@ function ExperienceShot({
   width,
   height,
   sizes = "(min-width: 768px) 50vw, 100vw",
-  frameWidth,
-  frameHeight,
-  frameBg,
 }: {
   kind: "current" | "redesigned";
   title: string;
@@ -80,15 +77,9 @@ function ExperienceShot({
   width: number;
   height: number;
   sizes?: string;
-  frameWidth?: number;
-  frameHeight?: number;
-  frameBg?: string;
 }) {
   const label =
     kind === "current" ? "CURRENT EXPERIENCE" : "REDESIGNED EXPERIENCE";
-  const boxW = frameWidth ?? width;
-  const boxH = frameHeight ?? height;
-  const framed = frameWidth != null && frameHeight != null;
 
   return (
     <figure className="flex h-full min-h-0 flex-col scroll-mt-24">
@@ -96,21 +87,14 @@ function ExperienceShot({
       <p className={`mt-2 ${TYPE.h3}`}>{title}</p>
       <div
         className="relative mt-3 w-full overflow-hidden rounded-2xl border border-foreground/10"
-        style={{
-          aspectRatio: `${boxW} / ${boxH}`,
-          backgroundColor: frameBg ?? "#000000",
-        }}
+        style={{ aspectRatio: `${width} / ${height}` }}
       >
         <ZoomableImage
           src={src}
           alt={alt}
           width={width}
           height={height}
-          className={
-            framed
-              ? "h-full w-full object-contain"
-              : "h-auto w-full object-contain"
-          }
+          className="h-full w-full"
           sizes={sizes}
           quality={95}
         />
@@ -582,26 +566,20 @@ export default function LoadedCaseStudyPage() {
               <ExperienceShot
                 kind="current"
                 title="Existing checkout"
-                src="/loaded/artifacts/before-desktop.png"
+                src="/loaded/artifacts/loaded_before_desktop.png"
                 alt="Existing Loaded checkout on desktop"
-                width={6048}
-                height={3452}
+                width={2880}
+                height={1508}
                 sizes="(min-width: 1280px) 1120px, 100vw"
-                frameWidth={6048}
-                frameHeight={3452}
-                frameBg="#1B1A3B"
               />
               <ExperienceShot
                 kind="redesigned"
                 title="Redesigned checkout"
-                src="/loaded/artifacts/loaded_redesigned_desktop_2x.png"
+                src="/loaded/artifacts/loaded_after_desktop.png"
                 alt="Redesigned Loaded checkout on desktop"
                 width={2880}
-                height={1792}
+                height={1508}
                 sizes="(min-width: 1280px) 1120px, 100vw"
-                frameWidth={6048}
-                frameHeight={3452}
-                frameBg="#1B1A3B"
               />
             </div>
 

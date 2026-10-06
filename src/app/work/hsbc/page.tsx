@@ -396,7 +396,7 @@ export default function HsbcCaseStudyPage() {
                     </li>
                     <li className={`inline-flex items-center gap-1.5 ${CHIP}`}>
                       <span className={ACCENT.mark}>04</span>
-                      Navigation
+                      Unclear progress
                     </li>
                   </ul>
                   <div
