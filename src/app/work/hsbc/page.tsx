@@ -391,12 +391,12 @@ export default function HsbcCaseStudyPage() {
                   <p className={TYPE.label}>Solves</p>
                   <ul className="mt-3 flex flex-wrap gap-2">
                     <li className={`inline-flex items-center gap-1.5 ${CHIP}`}>
-                      <span className={ACCENT.mark}>04</span>
-                      Navigation
-                    </li>
-                    <li className={`inline-flex items-center gap-1.5 ${CHIP}`}>
                       <span className={ACCENT.mark}>03</span>
                       Monitoring and errors
+                    </li>
+                    <li className={`inline-flex items-center gap-1.5 ${CHIP}`}>
+                      <span className={ACCENT.mark}>04</span>
+                      Navigation
                     </li>
                   </ul>
                   <div

@@ -35,6 +35,7 @@ function WorkShot({
   priority,
   glow,
   pad,
+  aspectRatio = "16 / 10",
 }: {
   fit: "cover" | "contain";
   src: string;
@@ -45,11 +46,12 @@ function WorkShot({
   priority?: boolean;
   glow?: boolean;
   pad?: boolean;
+  aspectRatio?: string;
 }) {
   return (
     <div
       className={`${IMAGE_FRAME} ${pad ? "p-[3%]" : ""}`}
-      style={{ aspectRatio: "16 / 10" }}
+      style={{ aspectRatio }}
     >
       {glow ? (
         <div
@@ -92,12 +94,14 @@ export default function Home() {
       title: "Loaded",
       subtitle: "Redesigning checkout to reduce friction and improve conversion",
       role: "Senior Product Designer",
-      imageSrc: "/portfolio/work-loaded.png",
+      imageSrc: "/portfolio/loaded_checkout_mockup_hd.png",
       imageAlt: "Loaded checkout with Account, Pay and Play and order summary",
       href: "/work/loaded",
-      width: 2048,
-      height: 1280,
+      width: 3580,
+      height: 2574,
       fit: "contain" as const,
+      aspectRatio: "3580 / 2574",
+      sizes: "(min-width: 1280px) 1120px, 100vw",
       inProgress: true,
     },
   ];
@@ -243,10 +247,11 @@ export default function Home() {
                   alt={w.imageAlt}
                   width={w.width}
                   height={w.height}
-                  sizes={WORK_SHOT_SIZES_FEATURED}
+                  sizes={w.sizes ?? WORK_SHOT_SIZES_FEATURED}
                   priority={w.priority}
                   glow={w.glow}
                   pad={w.pad}
+                  aspectRatio={w.aspectRatio}
                 />
                 <div className={IMAGE_TO_TEXT}>
                   <div className="flex flex-wrap items-center gap-2">

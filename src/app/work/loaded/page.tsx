@@ -276,14 +276,14 @@ export default function LoadedCaseStudyPage() {
         </section>
 
         <section className={`${SURFACE} overflow-hidden`}>
-          <div style={{ aspectRatio: "2048 / 1280" }}>
+          <div style={{ aspectRatio: "3580 / 2574" }}>
             <ZoomableImage
-              src="/portfolio/work-loaded.png"
+              src="/portfolio/loaded_checkout_mockup_hd.png"
               alt="Loaded checkout with Account, Pay and Play and order summary"
-              width={2048}
-              height={1280}
-              className="h-auto w-full object-contain"
-              sizes="(min-width: 1280px) 1200px, 100vw"
+              width={3580}
+              height={2574}
+              className="h-full w-full object-contain"
+              sizes="(min-width: 1280px) 1120px, 100vw"
               quality={95}
               priority
             />
@@ -594,9 +594,9 @@ export default function LoadedCaseStudyPage() {
               <ExperienceShot
                 kind="redesigned"
                 title="Redesigned checkout"
-                src="/loaded/artifacts/after-desktop.png"
+                src="/loaded/artifacts/loaded_redesigned_desktop_2x.png"
                 alt="Redesigned Loaded checkout on desktop"
-                width={2428}
+                width={2880}
                 height={1792}
                 sizes="(min-width: 1280px) 1120px, 100vw"
                 frameWidth={6048}
